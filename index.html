@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Tienda de Dropshipping</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="#" class="logo">Tu Tienda</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#products">Productos</a></li>
+                    <li><a href="#reviews">Opiniones</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar productos..." id="search-input">
+                    <button id="search-button"><i class="fas fa-search"></i></button>
+                </div>
+                <a href="#" class="cart-icon" id="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+                <a href="#" class="user-icon" id="user-icon"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="container">
+            <h1>Descubre Ofertas Increíbles</h1>
+            <p>Productos de calidad a precios que te encantarán.</p>
+            <a href="#products" class="btn-primary">Explorar Productos</a>
+        </div>
+    </div>
+
+    <main class="main-content container">
+        <section class="products-grid" id="products">
+            <h2>Nuestros Productos</h2>
+            </section>
+
+        <section class="user-reviews" id="reviews">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="reviews-container" id="reviews-container">
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"¡Absolutamente encantado con mi compra! La calidad superó mis expectativas y llegó muy rápido. ¡Definitivamente recomiendo esta tienda!"</p>
+                    <p class="reviewer-name">- María P.</p>
+                    </div>
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                    <p class="review-text">"El producto es genial y el precio excelente. El proceso de pago fue muy sencillo y seguro. ¡Gracias Tu Tienda!"</p>
+                    <p class="reviewer-name">- Carlos S.</p>
+                </div>
+                 <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Producto tal como se describe. Me encantó la facilidad de uso del sitio web. Una experiencia de compra muy fluida."</p>
+                    <p class="reviewer-name">- Laura M.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer" id="contact">
+        <div class="container footer-content">
+            <div class="footer-section about">
+                <h3>Tu Tienda</h3>
+                <p>Ofreciendo productos innovadores directamente a tu puerta.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Enlaces Útiles</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contáctanos</h3>
+                <p><i class="fas fa-envelope"></i> info@tutienda.com</p>
+                <p><i class="fas fa-phone"></i> +1 809-555-1234</p>
+                <div class="secure-payment-icons">
+                    <p>Pagos Seguros:</p>
+                    <i class="fab fa-cc-visa" aria-label="Visa"></i>
+                    <i class="fab fa-cc-mastercard" aria-label="Mastercard"></i>
+                    <i class="fab fa-cc-amex" aria-label="American Express"></i>
+                    <i class="fab fa-cc-paypal" aria-label="PayPal"></i>
+                    <i class="fas fa-shield-alt" aria-label="Pago Seguro"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tu Tienda. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-sidebar">
+            <h2>Tu Carrito <span class="close-btn" id="close-cart">&times;</span></h2>
+            <div class="cart-items" id="cart-items-container">
+                <p class="empty-cart-message">Tu carrito está vacío.</p>
+            </div>
+            <div class="cart-total">
+                <strong>Total: $<span id="cart-total-price">0.00</span></strong>
+            </div>
+            <button class="btn-checkout" id="btn-checkout">Proceder al Pago Seguro</button>
+        </div>
+    </div>
+
+    <div class="login-overlay" id="login-overlay">
+        <div class="login-modal">
+            <h2>Iniciar Sesión <span class="close-btn" id="close-login">&times;</span></h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn-primary btn-login">Acceder</button>
+            </form>
+            <p>¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+            <button class="btn-secondary btn-logout" id="logout-button" style="display:none; margin-top: 15px;">Cerrar Sesión</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
